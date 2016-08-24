@@ -18,6 +18,9 @@
   "homepage": "https://github.com/VladimirZaets/learnjs#readme",
   "dependencies": {
     "express": "*",
-    "nconf": "*"
+    "nconf": "*",
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "express-session": "*"
   }
 }
