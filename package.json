@@ -21,6 +21,7 @@
     "nconf": "*",
     "body-parser": "*",
     "cookie-parser": "*",
-    "express-session": "*"
+    "express-session": "*",
+    "angular": "1.5.x"
   }
 }
