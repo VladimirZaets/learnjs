@@ -1,0 +1,22 @@
+{
+  "name": "learnjs",
+  "description": "",
+  "main": "",
+  "authors": [
+    "vladimir zaets <strpwebstudio@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/js/libs"
+  ],
+  "dependencies": {
+    "angular": "1.5.x",
+    "angular-resource": "*",
+    "angular-route": "*",
+    "requirejs": "*"
+  },
+  "moduleType": []
+}
