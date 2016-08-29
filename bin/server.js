@@ -1,7 +1,7 @@
 var app = require('index'),
     http = require('http'),
-    config = require('config'),
-    port = config.get('port'),
+    config = require('config').get('server'),
+    port = config.port,
     server;
 
 server = http.createServer(app);
