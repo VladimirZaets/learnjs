@@ -1,7 +1,5 @@
 var express = require('express'),
     path = require('path'),
-    dataTypes = require('sequelize'),
-    db = require('setup/database'),
     app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
