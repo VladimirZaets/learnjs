@@ -1,6 +1,7 @@
-var sequelize = require('sequelize-mysql').sequelize;
+var sequelize = require('sequelize-mysql').sequelize,
+    database = require('../database');
 
-var User = sequelize.define('user', {
+var User = database.define('user', {
     id: {
         type: sequelize.INTEGER,
         field: 'id',
@@ -22,3 +23,5 @@ var User = sequelize.define('user', {
         unique: true
     },
 });
+
+module.exports = User;
