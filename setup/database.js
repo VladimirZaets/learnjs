@@ -1,4 +1,4 @@
-var Sequelize = require('sequelize'),
+var Sequelize = require('sequelize-mysql').sequelize,
     config = require('config').get('database'),
     sequelize = new Sequelize(
         config.database,
@@ -7,5 +7,3 @@ var Sequelize = require('sequelize'),
     );
 
 module.exports = sequelize;
-
-
