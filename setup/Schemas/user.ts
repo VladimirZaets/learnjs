@@ -1,5 +1,6 @@
-var sequelize = require('sequelize-mysql').sequelize,
-    database = require('../database');
+import { database } from 'setup/database';
+var sequelize = require('sequelize-mysql').sequelize;
+
 
 var User = database.define('user', {
     id: {
@@ -24,4 +25,4 @@ var User = database.define('user', {
     },
 });
 
-module.exports = User;
+export { User }

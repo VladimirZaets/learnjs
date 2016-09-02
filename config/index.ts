@@ -6,5 +6,5 @@ nconf.env()
     .file({
         file: path.join(__dirname, 'config.json')
     });
-export { nconf }
+export { nconf as config }
 

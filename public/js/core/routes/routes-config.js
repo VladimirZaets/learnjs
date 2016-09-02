@@ -5,11 +5,17 @@ define([], function() {
         defaultRoutePath: '/',
         routes: {
             '/': {
-                templateUrl: '/template/index.html',
-                dependencies: [
-                    '/js/controller/index-controller.js'
-                ]
-            }
+                    templateUrl: '/template/index.html',
+                    dependencies: [
+                        '/js/controller/index-controller.js'
+                    ]
+                },
+            '/register': {
+                    templateUrl: '/template/index.html',
+                    dependencies: [
+                        '/js/controller/index-controller.js'
+                    ]
+                }
         }
     };
 });

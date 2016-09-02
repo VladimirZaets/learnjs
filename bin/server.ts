@@ -1,5 +1,5 @@
-import { app } from '../index';
-import { nconf as config } from '../config/index';
+import { app } from 'index';
+import { config } from 'config/index';
 import http = require('http');
 
 var configServer = config.get('server'),
