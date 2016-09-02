@@ -23,7 +23,6 @@
     "body-parser": "*",
     "cookie-parser": "*",
     "express-session": "*",
-    "bower": "*",
     "sequelize-mysql": "*"
   }
 }

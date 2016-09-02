@@ -1,4 +1,4 @@
 node_modules/
 .idea/
-public/js/libs/
+public/node_modules/
 typings/

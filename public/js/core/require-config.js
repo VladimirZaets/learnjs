@@ -1,14 +1,14 @@
 require.config({
-    baseUrl: 'js',
+    baseUrl: '.',
     map: {
         '*': {
-            core: 'core'
+            core: 'js/core'
         }
     },
     paths: {
-        'angular': 'libs/angular/angular',
-        'angular-route': 'libs/angular-route/angular-route.min',
-        'bootstrap': 'core/bootstrap'
+        'angular': 'node_modules/angular/angular',
+        'angular-route': 'node_modules/angular-route/angular-route.min',
+        'bootstrap': 'js/core/bootstrap'
     },
     shim: {
         'angular': {
@@ -19,5 +19,5 @@ require.config({
             exports: 'angular-route'
         }
     },
-    deps: ['core/bootstrap']
+    deps: ['js/core/bootstrap']
 });
