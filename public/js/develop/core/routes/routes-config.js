@@ -7,13 +7,13 @@ define([], function() {
             '/': {
                     templateUrl: '/template/index.html',
                     dependencies: [
-                        '/js/controller/index-controller.js'
+                        'js/controller/index-controller.js'
                     ]
                 },
             '/register': {
                     templateUrl: '/template/index.html',
                     dependencies: [
-                        '/js/controller/index-controller.js'
+                        'js/controller/index-controller.js'
                     ]
                 }
         }

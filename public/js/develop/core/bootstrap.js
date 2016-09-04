@@ -1,8 +1,8 @@
 define([
     'angular',
     'angular-route',
-    'core/app',
-    'core/routes/routes'
+    'js/core/app',
+    'js/core/routes/routes'
 ], function(angular, angularRouter, app, routes) {
     'use strict';
 

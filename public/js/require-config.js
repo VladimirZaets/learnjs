@@ -2,7 +2,7 @@ require.config({
     baseUrl: '.',
     map: {
         '*': {
-            core: 'js/core'
+            js: 'js/production'
         }
     },
     paths: {

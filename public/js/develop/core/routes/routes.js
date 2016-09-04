@@ -1,7 +1,7 @@
 define([
-    'core/app',
-    'core/routes/routes-config',
-    'core/routes/dependency-loader'
+    'js/core/app',
+    'js/core/routes/routes-config',
+    'js/core/routes/dependency-loader'
 ], function(app, config, dependencyLoader){
     'use strict';
 

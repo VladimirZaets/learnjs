@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "build-js": "babel js/develop -d js/production"
   },
   "author": "",
   "license": "ISC",
@@ -17,5 +17,8 @@
   "devDependencies": {
     "babel-cli": "^6.14.0",
     "babel-preset-es2015": "*"
+  },
+  "babel": {
+    "extends": "./.babelrc"
   }
 }
