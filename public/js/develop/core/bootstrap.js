@@ -3,9 +3,7 @@ define([
     'angular-route',
     'js/core/app',
     'js/core/routes/routes'
-], function(angular, angularRouter, app, routes) {
-    'use strict';
-
+], (angular, angularRouter, app, routes) => {
     app.config(
         [
             '$routeProvider',

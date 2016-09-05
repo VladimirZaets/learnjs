@@ -1,19 +1,13 @@
-define([], function() {
-    'use strict';
+define([], () => (dependencies) => ({
+    loader: ['$q','$rootScope', ($q, $rootScope) => {
+        var deferred = $q.defer();
 
-    return function(dependencies) {
-        return {
-            loader: ['$q','$rootScope', function($q, $rootScope) {
-                var deferred = $q.defer();
+        require(dependencies, () => {
+            $rootScope.$apply(() => {
+                deferred.resolve();
+            });
+        });
 
-                require(dependencies, function() {
-                    $rootScope.$apply(function() {
-                        deferred.resolve();
-                    });
-                });
-
-                return deferred.promise;
-            }]
-        };
-    }
-});
+        return deferred.promise;
+    }]
+}));

@@ -1,8 +1,7 @@
-define([], function() {
-    'use strict';
-
-    return {
+define([], () => (
+    {
         defaultRoutePath: '/',
+        mainDependencies: [],
         routes: {
             '/': {
                     templateUrl: '/template/index.html',
@@ -11,11 +10,17 @@ define([], function() {
                     ]
                 },
             '/register': {
-                    templateUrl: '/template/index.html',
+                    templateUrl: '/template/register.html',
                     dependencies: [
-                        'js/controller/index-controller.js'
+                        'js/controller/register-controller.js'
                     ]
-                }
+                },
+            '/login': {
+                templateUrl: '/template/login.html',
+                dependencies: [
+                    'js/controller/login-controller.js'
+                ]
+            }
         }
-    };
-});
+    })
+);

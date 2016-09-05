@@ -1,10 +1,10 @@
 define([
-    'angular'
-], function(angular) {
-    angular.module('app').controller('IndexController', IndexController);
+    'angular',
+], (angular) => {
+    let IndexController = ($scope) => {
+        $scope.hello = 'Hello world'
+    };
 
     IndexController.$inject = ['$scope'];
-    function IndexController($scope) {
-        $scope.hello = 'Hello world'
-    }
+    angular.module('app').controller('IndexController', IndexController);
 });

@@ -1,18 +1,17 @@
 define([
     'js/core/app',
     'js/core/routes/routes-config',
-    'js/core/routes/dependency-loader'
-], function(app, config, dependencyLoader){
-    'use strict';
-
-    return function(
+    'js/core/routes/dependency-loader',
+    'angular'
+], (app, config, dependencyLoader, angular) =>
+    (
         $routeProvider,
         $locationProvider,
         $controllerProvider,
         $compileProvider,
         $filterProvider,
         $provide
-    ) {
+    ) => {
         app.controller = $controllerProvider.register;
         app.directive  = $compileProvider.directive;
         app.filter     = $filterProvider.register;
@@ -20,7 +19,8 @@ define([
         app.service    = $provide.service;
 
         if (config.routes !== undefined) {
-            angular.forEach(config.routes, function(route, path) {
+            angular.forEach(config.routes, (route, path) => {
+                route.dependencies = route.dependencies.concat(config.mainDependencies);
                 $routeProvider.when(
                     path,
                     {
@@ -30,8 +30,8 @@ define([
             });
         }
 
-        if(config.defaultRoutePaths !== undefined) {
+        if (config.defaultRoutePaths !== undefined) {
             $routeProvider.otherwise({redirectTo:config.defaultRoutePaths});
         }
     }
-});
+);

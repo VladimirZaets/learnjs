@@ -2,7 +2,7 @@ require.config({
     baseUrl: '.',
     map: {
         '*': {
-            js: 'js/production'
+            js: 'js/develop'
         }
     },
     paths: {
@@ -19,5 +19,9 @@ require.config({
             exports: 'angular-route'
         }
     },
-    deps: ['js/core/bootstrap']
+    deps: [
+        'js/core/bootstrap',
+        'js/controller/header-controller',
+        'js/controller/footer-controller'
+    ]
 });
