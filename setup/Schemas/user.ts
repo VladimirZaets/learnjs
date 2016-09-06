@@ -1,28 +1,31 @@
-import { database } from 'setup/database';
-var sequelize = require('sequelize-mysql').sequelize;
+//import { database } from 'setup/database';
+//var sequelize = require('sequelize-mysql').sequelize;
+"use strict";
 
-
-var User = database.define('user', {
+var fabric = function(sequelize, DataTypes) { 
+    var User = sequelize.define('user', {
     id: {
-        type: sequelize.INTEGER,
+        type: DataTypes.INTEGER,
         field: 'id',
         primaryKey: true,
         autoIncrement: true
     },
     firstName: {
-        type: sequelize.STRING,
+        type: DataTypes.STRING,
         field: 'firstName'
     },
     lastName: {
-        type: sequelize.STRING,
+        type: DataTypes.STRING,
         field: 'lastName'
     },
     usename: {
-        type: sequelize.STRING,
+        type: DataTypes.STRING,
         field: 'usename',
         allowNull: false,
         unique: true
-    },
-});
+    }});
 
-export { User }
+    return User;
+};
+
+export = fabric;

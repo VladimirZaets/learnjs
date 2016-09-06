@@ -18,11 +18,12 @@
   },
   "homepage": "https://github.com/VladimirZaets/learnjs#readme",
   "dependencies": {
-    "express": "*",
-    "nconf": "*",
     "body-parser": "*",
     "cookie-parser": "*",
+    "express": "*",
     "express-session": "*",
+    "fs": "0.0.1-security",
+    "nconf": "*",
     "sequelize-mysql": "*"
   }
 }
