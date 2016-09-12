@@ -1,21 +1,10 @@
 define([
     'angular',
     'angular-route',
-    'js/core/app',
-    'js/core/routes/routes'
-], (angular, angularRouter, app, routes) => {
-    app.config(
-        [
-            '$routeProvider',
-            '$locationProvider',
-            '$controllerProvider',
-            '$compileProvider',
-            '$filterProvider',
-            '$provide',
-            routes
-        ]);
-
-    angular.bootstrap(document, ['app']);
-
-    return app;
+    'angular-ui-route',
+    'js/module',
+    'js/core/service/module-loader',
+    'js/core/decorator/angular-module',
+], (angular, angularRouter, angularUiRouter, appModule, moduleLoader) => {
+    moduleLoader.then(() => angular.bootstrap(document, ['app']));
 });

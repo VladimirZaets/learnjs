@@ -1,11 +1,11 @@
 define([
     'angular',
-    'js/core/app'
-], (angular) => {
+    'js/module'
+], (angular, appModule) => {
     let FooterController = ($scope) => {
         $scope.pussy = 'Main';
     };
 
     FooterController.$inject = ['$scope'];
-    angular.module('app').controller('FooterController', FooterController);
+    appModule.controller('FooterController', FooterController);
 });

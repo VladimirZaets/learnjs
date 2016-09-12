@@ -1,14 +1,11 @@
 <!DOCTYPE html>
+<html>
 <head>
 </head>
 <body>
-<div ng-include src="'/template/header.html'">
-</div>
-<ng-view>
-
-</ng-view>
-<div ng-include src="'/template/footer.html'">
-</div>
+<div ng-include src="'/template/header.html'"></div>
+<div ui-view></div>
+<div ng-include src="'/template/footer.html'"/></div>
 </body>
 <script data-main="/js/require-config.js" src="/node_modules/requirejs/require.js"></script>
 </html>
