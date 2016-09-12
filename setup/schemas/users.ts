@@ -1,5 +1,3 @@
-//import { database } from 'setup/database';
-//var sequelize = require('sequelize-mysql').sequelize;
 "use strict";
 
 var fabric = function(sequelize, DataTypes) { 
