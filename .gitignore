@@ -2,8 +2,8 @@ node_modules/
 .idea/
 public/js/production/
 public/node_modules/
-public/js/libs
 typings/
-*.js
+/*.js
 /*/*.js
 /*/*/*.js
+!public/js/*.js
