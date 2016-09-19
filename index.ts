@@ -1,6 +1,6 @@
 import express  = require('express');
 import path  = require('path');
-import { router } from 'api/router/router';
+import { router } from 'api/router';
 import { models } from 'setup';
 
 let app = express();

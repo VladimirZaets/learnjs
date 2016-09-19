@@ -1,7 +1,10 @@
 "use strict";
 
-var fabric = function(sequelize, DataTypes) { 
-    var User = sequelize.define('user', {
+const fabric,
+    User;
+
+fabric = function(sequelize, DataTypes) { 
+    User = sequelize.define('user', {
     id: {
         type: DataTypes.INTEGER,
         field: 'id',

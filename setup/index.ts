@@ -1,8 +1,11 @@
-const fs = require("fs");
-const path = require("path");
+
 import { database } from 'setup/database';
-const schemasPath = path.join(__dirname, 'schemas');
-const models = {};
+const fs = require("fs"),
+  path = require("path"),
+  schemasPath = path.join(__dirname, 'schemas'),
+  models = {};
+let model,
+  modelName;
 
 fs
   .readdirSync(schemasPath)
@@ -10,7 +13,7 @@ fs
      return (file.indexOf(".ts") === -1);
   })
   .forEach(function(file) {
-    var model = database.import(path.join(schemasPath, file)),
+    model = database.import(path.join(schemasPath, file)),
     modelName = file.replace(".js", "");
     console.log(modelName);
     models[modelName] = model;
