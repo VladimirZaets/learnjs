@@ -12,6 +12,8 @@ require.config({
         'json': 'node_modules/requirejs-plugins/src/json',
         'angular-route': 'node_modules/angular-route/angular-route.min',
         'angular-ui-route': 'node_modules/angular-ui-router/release/angular-ui-router.min',
+        'angular-translate': 'node_modules/angular-translate/dist/angular-translate',
+        'angular-translate-loader-static-files': 'node_modules/angular-translate-loader-static-files/angular-translate-loader-static-files',
         'bootstrap': 'js/core/bootstrap',
     },
     shim: {
@@ -25,6 +27,14 @@ require.config({
         'angular-ui-route': {
             deps: ['angular', 'angular-route'],
             exports: 'angular-ui-route'
+        },
+        'angular-translate': {
+            deps: ['angular'],
+            exports: 'angular-translate'
+        },
+        'angular-translate-loader-static-files': {
+            deps: ['angular-translate'],
+            exports: 'angular-translate-loader-static-files'
         }
     },
     deps: [

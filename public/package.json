@@ -13,6 +13,8 @@
     "angular-resource": "*",
     "angular-route": "*",
     "angular-ui-router": "~0.2.15",
+    "angular-translate": "*",
+    "angular-translate-loader-static-files": "^2.6.1",
     "requirejs": "*",
     "requirejs-plugins": "*"
   },

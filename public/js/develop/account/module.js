@@ -11,7 +11,9 @@ define([
         '$stateProvider',
         '$urlRouterProvider',
         '$controllerProvider',
-         ($stateProvider, $urlRouterProvider, $controllerProvider) => {
+        '$translateProvider',
+        ($stateProvider, $urlRouterProvider, $controllerProvider, $translateProvider) => {
+
             router(moduleName, routerConfig)($stateProvider, $urlRouterProvider, $controllerProvider);
          }
     ]);
