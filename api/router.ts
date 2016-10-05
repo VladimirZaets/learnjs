@@ -1,12 +1,10 @@
-import express  = require('express');
-import { users } from 'api/users';
+import express = require('express');
 const fs = require("fs"),
   path = require("path"),
   apiRoutersPath = path.join(__dirname, 'routes'),
   router = express.Router();
 let routeName,
   setRoutes;
-
 
 fs
   .readdirSync(apiRoutersPath)

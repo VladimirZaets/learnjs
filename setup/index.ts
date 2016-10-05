@@ -1,4 +1,3 @@
-
 import { database } from 'setup/database';
 const fs = require("fs"),
   path = require("path"),
@@ -15,7 +14,6 @@ fs
   .forEach(function(file) {
     model = database.import(path.join(schemasPath, file)),
     modelName = file.replace(".js", "");
-    console.log(modelName);
     models[modelName] = model;
   });
 

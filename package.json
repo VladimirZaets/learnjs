@@ -19,11 +19,14 @@
   "homepage": "https://github.com/VladimirZaets/learnjs#readme",
   "dependencies": {
     "body-parser": "*",
-    "cookie-parser": "*",
+    "body-parser-json": "^1.9.2",
+    "cookie-parser": "^1.4.3",
     "express": "*",
-    "express-session": "*",
+    "express-session": "^1.14.1",
     "fs": "0.0.1-security",
     "nconf": "*",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
     "sequelize-mysql": "*"
   }
 }

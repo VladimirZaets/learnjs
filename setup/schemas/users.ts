@@ -1,5 +1,3 @@
-"use strict";
-
 const fabric,
     User;
 
@@ -11,20 +9,26 @@ fabric = function(sequelize, DataTypes) {
         primaryKey: true,
         autoIncrement: true
     },
-    firstName: {
+    firstname: {
         type: DataTypes.STRING,
-        field: 'firstName'
+        field: 'firstname'
     },
-    lastName: {
+    lastname: {
         type: DataTypes.STRING,
-        field: 'lastName'
+        field: 'lastname'
     },
-    usename: {
+    username: {
         type: DataTypes.STRING,
-        field: 'usename',
+        field: 'username',
         allowNull: false,
         unique: true
-    }});
+    },
+    password: {
+        type: DataTypes.STRING,
+        field: 'password',
+        allowNull: false
+    }
+});
 
     return User;
 };
