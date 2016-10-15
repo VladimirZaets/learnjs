@@ -1,13 +1,14 @@
-const express  = require('express'),
-path  = require('path'),
-bodyParser = require('body-parser'),
-cookieParser = require('cookie-parser'),
-session = require('express-session');
+const express  = require('express');
+const path  = require('path');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+
 import { initAuthentication } from 'auth/passport';
 import { router } from 'api/router';
 import { models } from 'setup';
 
-let app = express();
+const app = express();
 
 app.set('models', models);
 

@@ -1,10 +1,11 @@
+const fs = require("fs");
+const path = require("path");
+const schemasPath = path.join(__dirname, 'schemas');
 import { database } from 'setup/database';
-const fs = require("fs"),
-  path = require("path"),
-  schemasPath = path.join(__dirname, 'schemas'),
-  models = {};
-let model,
-  modelName;
+
+const models = {};
+let model: Object;
+let modelName: string;
 
 fs
   .readdirSync(schemasPath)
@@ -24,4 +25,4 @@ database.sync().then(function() {
   });
 
 //export models
-module.exports.models = models;
+export { models };

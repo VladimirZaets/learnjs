@@ -1,4 +1,4 @@
-const passport = require('passport'),
+const passport = require('passport');
 import { localStrategy } from 'auth/strategies/local';
 
 const initAuthentication = function (app) {

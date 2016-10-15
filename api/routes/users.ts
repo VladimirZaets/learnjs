@@ -1,10 +1,11 @@
 const passport = require('passport');
 
-let User,
-    setRoutes = function (router) {
+let User: Object;
+let setRoutes = function (router) {
     router.route('/signup')
         .post((req:any, res:any) => {
             User = require('models/user');
+            
             new User(req.body).create().then(
                 function (createdUser) {
                     req.login(createdUser.dataValues, function () {

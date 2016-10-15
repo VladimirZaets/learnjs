@@ -1,9 +1,9 @@
-import { config } from 'config';
-const Sequelize = require('sequelize-mysql').sequelize,
-    databaseConfig = config.get('database'),
-    sequelize;
+const Sequelize = require('sequelize-mysql').sequelize;
 
-sequelize = new Sequelize(
+import { config } from 'config';
+
+const databaseConfig = config.get('database');
+const sequelize = new Sequelize(
         databaseConfig.database,
         databaseConfig.user,
         databaseConfig.password

@@ -1,5 +1,6 @@
 import {app} from 'index';
 import { crypto } from 'models/crypto';
+
 const users = app.get('models').users;
 
 class User {
@@ -39,4 +40,4 @@ class User {
     }
 }
 
-export = User
+export = User;

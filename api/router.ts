@@ -1,14 +1,16 @@
+const fs = require("fs");
+const path = require("path");
 import express = require('express');
-const fs = require("fs"),
-  path = require("path"),
-  apiRoutersPath = path.join(__dirname, 'routes'),
-  router = express.Router();
-let routeName,
-  setRoutes;
+
+const apiRoutersPath = path.join(__dirname, 'routes');
+const router = express.Router();
+let routeName: string;
+let setRoutes: Object;
 
 fs
   .readdirSync(apiRoutersPath)
   .filter(function(file) {
+
      return (file.indexOf(".ts") === -1);
   })
   .forEach(function(file) {

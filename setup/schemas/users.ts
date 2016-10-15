@@ -1,8 +1,5 @@
-const fabric,
-    User;
-
-fabric = function(sequelize, DataTypes) { 
-    User = sequelize.define('user', {
+const fabric = function(sequelize, DataTypes) { 
+    const User = sequelize.define('user', {
     id: {
         type: DataTypes.INTEGER,
         field: 'id',
