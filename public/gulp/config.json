@@ -1,0 +1,8 @@
+{
+  "libs": {
+      "angular": "./node_modules/angular/angular.js",
+      "angular-resource": "./node_modules/angular-resource/angular-resource.js",
+      "angular-route": "./node_modules/angular-route/angular-route.js",
+      "angular-ui-router": "./node_modules/angular-ui-router/release/angular-ui-router.js"
+  }
+}

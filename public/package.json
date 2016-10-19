@@ -2,10 +2,6 @@
   "name": "public",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-      "build-js": "babel js/develop -d js/production --copy-files"
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -13,14 +9,22 @@
     "angular-resource": "*",
     "angular-route": "*",
     "angular-ui-router": "~0.2.15",
-    "requirejs": "*",
-    "requirejs-plugins": "*"
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.6",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "*",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-concat": "*",
+    "gulp-bundle-files": "*"
+
   },
   "devDependencies": {
-    "babel-cli": "^6.14.0",
-    "babel-preset-es2015": "*"
-  },
-  "babel": {
-    "extends": "./.babelrc"
+    "babelify": "^6.1.3",
+    "browserify": "^10.2.6",
+    "run-sequence": "^1.1.1",
+    "babel-preset-es2015": "*",
+    "vinyl-source-stream": "^1.1.0",
+    "vinyl-buffer": "^1.0.0",
+    "require-dir": "^0.3.0"
   }
 }
