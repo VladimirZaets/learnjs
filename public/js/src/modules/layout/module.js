@@ -1,9 +1,9 @@
-import {HeaderController} from './controllers/header.js'
-import {FooterController} from './controllers/footer.js'
+import {LjsHeaderComponent} from './components/header.js'
+//import {FooterController} from './controllers/footer.js'
 
-let module = angular.module('layout', ['app']);
+let module = angular.module('layout', ['ui', 'app']);
 
-module.controller('HeaderController', HeaderController);
-module.controller('FooterController', FooterController);
+module.component('ljsHeader', LjsHeaderComponent);
+//module.controller('FooterController', FooterController);
 
 export {module as layoutModule};

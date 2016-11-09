@@ -1,0 +1,19 @@
+[
+    {
+        "caption": "home", 
+        "state": "index.home"
+    },
+    {
+        "caption": "account", 
+        "options": [
+                    {
+                        "caption": "settings", 
+                        "state": "index.account-settings"
+                    },
+                    {
+                        "caption": "statistics",
+                         "state": "index.account-statistics"
+                    }
+                 ]
+    }
+]

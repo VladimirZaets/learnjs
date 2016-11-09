@@ -1,0 +1,17 @@
+<ul ng-if='$ctrl.option.options'>
+    <a>
+        <span ng-bind-html="$ctrl.option.caption">
+        </span>
+    </a>
+    <li ng-repeat="opt in $ctrl.option.options" opt="opt">
+        <a ui-sref="{{opt.state}}">
+            <span ng-bind-html="opt.caption"></span>
+        </a>
+    </li>
+</ul>
+<ul ng-if='!$ctrl.option.options'>
+    <a ui-sref="{{$ctrl.option.state}}">
+        <span ng-bind-html="$ctrl.option.caption">
+        </span>
+    </a>
+</ul>

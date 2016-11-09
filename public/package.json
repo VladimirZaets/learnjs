@@ -8,15 +8,15 @@
     "angular": "1.5.x",
     "angular-resource": "*",
     "angular-route": "*",
+    "angular-sanitize": "^1.5.8",
     "angular-ui-router": "~0.2.15",
     "gulp": "^3.9.0",
-    "gulp-util": "^3.0.6",
+    "gulp-bundle-files": "*",
+    "gulp-concat": "*",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-uglify": "*",
     "gulp-uglifyjs": "^0.6.2",
-    "gulp-concat": "*",
-    "gulp-bundle-files": "*"
-
+    "gulp-util": "^3.0.6"
   },
   "devDependencies": {
     "babelify": "^6.1.3",
