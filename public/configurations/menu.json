@@ -4,6 +4,10 @@
         "state": "index.home"
     },
     {
+        "caption": "signup", 
+        "state": "index.signup"
+    },
+    {
         "caption": "account", 
         "options": [
                     {
@@ -14,6 +18,6 @@
                         "caption": "statistics",
                          "state": "index.account-statistics"
                     }
-                 ]
+                ]
     }
 ]

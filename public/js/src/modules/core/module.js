@@ -1,4 +1,4 @@
-let module = angular.module('core', ['layout', 'ui.router', 'ngRoute']);
+let module = angular.module('core', ['layout', 'auth', 'ui.router', 'ngRoute']);
 
 angular.module('core').config([
     '$stateProvider',
@@ -33,6 +33,14 @@ angular.module('core').config([
                 views: {
                     "Content": {
                         templateUrl: 'templates/modules/account/account-statistics.html'
+                    }
+                }
+            })
+            .state('index.signup', {
+                url: '/signup',
+                views: {
+                    "Content": {
+                        template: '<ljs-signup></ljs-signup>'
                     }
                 }
             });

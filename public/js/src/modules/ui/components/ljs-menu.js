@@ -1,9 +1,8 @@
+import {MenuController} from '../controllers/menu.js';
 
-    import {MenuController} from '../controllers/menu.js';
+const LjsMenuComponent = {
+    templateUrl:'templates/modules/ui/menu/menu.html',
+    controller: MenuController
+};
 
-    const LjsMenuComponent = {
-        templateUrl:'templates/modules/ui/menu/menu.html',
-        controller: MenuController
-    };
-
-    export {LjsMenuComponent}
+export {LjsMenuComponent}

@@ -7,13 +7,6 @@ class MenuController {
             }).then(function successCallback(response) {
                 this.options = response.data;
             }.bind(this));
-        /*this.options = [
-            {"caption": "home", "state": "home"},
-            {"caption": "account", "state": "account", options: [
-                {"caption": "settings", "state": "account-settings"},
-                {"caption": "statistics", "state": "account-statistics"}
-            ]}
-        ];*/
         }.bind(this);
     }
 }
