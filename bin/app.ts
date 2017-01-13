@@ -8,6 +8,6 @@ const app = express();
 app.set('models', models);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api', router);
-app.use('/', (req:any, res:any) => {res.send(req.url)});
+app.use('/', (req:any, res:any) => {res.render('index')});
 
 export { app };

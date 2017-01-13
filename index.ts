@@ -11,9 +11,7 @@ import { models } from 'setup';
 const app = express();
 
 app.set('models', models);
-
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -22,6 +20,6 @@ app.use(session({secret: 'c@T', name: 'connect.sid.learnjs'}));
 initAuthentication(app);
 
 app.use('/api', router);
-app.use('/', (req:any, res:any) => {res.send(req.url)});
+app.use('/', (req:any, res:any) => {res.redirect('/#' + req.url)});
 
 export { app };
